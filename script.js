@@ -36,7 +36,7 @@ snapBtn.addEventListener('click', () => {
       const formData = new FormData();
       formData.append("file", blob, "photo.png"); // Nama bebas
 
-      fetch("http://10.5.60.16:9000/upload", {
+     fetch("http://127.0.0.1:8000/upload", {
         method: "POST",
         body: formData
       })
